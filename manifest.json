@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 2,
+    "name" : "pc2mobile",
+    "version" : "1.0",
+    "description" : "pc2mobile",
+    "icons" : {
+        "128" : "PC2M.png",
+        "48" : "PC2M.png",
+        "16" : "PC2M.png"
+    },
+    "permissions": [
+        "contextMenus",
+        "activeTab"
+    ],
+    "browser_action" : {
+        "default_icon" : "PC2M.png",
+        "default_popup" : "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["oncopy.js"]
+        }
+    ]
+}

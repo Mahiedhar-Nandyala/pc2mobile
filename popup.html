@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PC2MOBILE</title>
+    </head>
+    <style>
+        body {
+            min-width: 100px;
+            min-height: 100px;
+            padding: 0 20px 0 20px;
+        }
+        #PC2MOBILE_title {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
+    <body>
+        <h3>Pc2Mobile</h3>
+        <h3>QR code for text: </h3>
+        <p id="PC2MOBILE_title"></p>
+        <h3>QR code: </h3>
+        <p>scan this QR code to copy the content</p>
+        <canvas id="PC2MOBILE-qr-code"></canvas>
+	</body>
+    <script src="qrious.min.js"></script>
+    <script src="popup.js"></script>    
+</html>
